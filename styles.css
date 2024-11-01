@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .crypto-prices, .converter {
+    margin: 20px 0;
+  }
+  
+  label, select, input, button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

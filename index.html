@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptocurrency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptocurrency Converter</h1>
+    <div class="crypto-prices">
+      <h2>Current Prices</h2>
+      <ul id="cryptoPrices">
+        <!-- Prices will populate here -->
+      </ul>
+    </div>
+    <div class="converter">
+      <h2>Converter</h2>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+      <label for="fromCurrency">From:</label>
+      <select id="fromCurrency">
+        <option value="btc">Bitcoin (BTC)</option>
+        <option value="eth">Ethereum (ETH)</option>
+        <option value="ltc">Litecoin (LTC)</option>
+        <!-- Add more cryptocurrencies as needed -->
+      </select>
+
+      <label for="toCurrency">To:</label>
+      <select id="toCurrency">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+
+      <button onclick="convert()">Convert</button>
+      <p id="result">Converted Amount: </p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
